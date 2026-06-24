@@ -1,0 +1,36 @@
+[33mcommit 7014256cebaa26ef4201537c0ba52be29ec4cfcc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: 1f10250297 <s1f102502979@iniad.org>
+Date:   Wed Jun 24 09:39:11 2026 +0900
+
+    テストのサンプルを追加
+
+M	todo/tests.py
+
+[33mcommit 6f874436bac3b446e70c603e2876fd252c6d3ddd[m
+Author: 1f10250297 <s1f102502979@iniad.org>
+Date:   Wed Jun 24 09:36:42 2026 +0900
+
+    todoアプリケーションを追加
+
+M	config/settings.py
+A	todo/__init__.py
+A	todo/admin.py
+A	todo/apps.py
+A	todo/migrations/__init__.py
+A	todo/models.py
+A	todo/tests.py
+A	todo/views.py
+
+[33mcommit d61c48e08fc58c30f97bde33fd0f117a5bccbd16[m
+Author: 1f10250297 <s1f102502979@iniad.org>
+Date:   Wed Jun 24 09:35:15 2026 +0900
+
+    Initial commit
+
+A	.gitignore
+A	config/__init__.py
+A	config/asgi.py
+A	config/settings.py
+A	config/urls.py
+A	config/wsgi.py
+A	manage.py
