@@ -75,11 +75,11 @@ class TodoViewTestCase(TestCase):
         self.assertEqual(len(response.context['tasks']), 1)
 
     def test_index_get_order_post(self):
-        task1 = Task(title = 'task1', due_at=timezone.make_aware(datetime(2024, 7, 1)))
+        task1 = Task(title='task1', due_at=timezone.make_aware(datetime(2024, 7, 1)))
         task1.save()
-        task2 = Task(title = 'task2', due_at=timezone.make_aware(datetime(2024, 8, 1)))
+        task2 = Task(title='task2', due_at=timezone.make_aware(datetime(2024, 8, 1)))
         task2.save()
-        client=Client()
+        client = Client()
         response = client.get('/?order=post')
 
         self.assertEqual(response.status_code, 200)
@@ -92,7 +92,7 @@ class TodoViewTestCase(TestCase):
         task1.save()
         task2 = Task(title='task2', due_at=timezone.make_aware(datetime(2024, 8, 1)))
         task2.save()
-        client=Client()
+        client = Client()
         response = client.get('/?order=due')
 
         self.assertEqual(response.status_code, 200)
